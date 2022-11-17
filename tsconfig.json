@@ -1,21 +1,17 @@
 {
+  "extends": "@tsconfig/node16/tsconfig.json",
   "compilerOptions": {
     "strict": true,
-    "target": "ESNext",
-    "module": "ESNext",
     "outDir": "./lib",
     "moduleResolution": "Node",
     "esModuleInterop": true,
-    "skipLibCheck": true,
-    "lib": ["ESNext", "DOM"],
     "declaration": true,
-    "declarationDir": "./types",
     "sourceMap": true,
-    "removeComments": false,
+    "removeComments": true,
     "noUnusedLocals": true,
     "noUnusedParameters": true,
     "baseUrl": "./"
   },
   "include": ["src"],
-  "exclude": ["node_modules", "dist"]
+  "exclude": ["node_modules", "lib"]
 }
